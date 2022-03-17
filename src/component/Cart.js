@@ -60,7 +60,7 @@ return(
                                    <IconButton onClick={quantityIncrement} variant="outlined"><AddIcon/></IconButton>
                                </Grid>
                                <Grid item>
-                                   <Box sx={{height:"30px",width:"50px",border:"2px solid black",margin:"5px 5px 10px 5px",borderRadius:"10px",paddingLeft:"15px"}}>
+                                   <Box sx={{height:"30px",width:"50px",border:"2px solid black",boxSizing:"border-box",margin:"5px 5px 10px 5px",borderRadius:"10px",paddingLeft:"15px"}}>
                                      {qty}
                                    </Box>
                                </Grid>
