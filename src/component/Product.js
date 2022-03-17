@@ -11,13 +11,13 @@ const Product = ({id,img,title,price})=>{
    }
 return(
     <>
-      <Card  sx={{margin:"10px",backgroundColor:"rgb(245,245,245)" }}>
+      <Card  sx={{margin:"10px"}}>
            <Box sx={{height:"320px"}}>
                <CardMedia
                   component="img"
                   alt="Product"
                   image={img}
-                  sx={{height:"160px",width:"auto",margin:"1px auto"}}
+                  sx={{height:"160px",width:"auto",margin:"2px auto"}}
                   
                />
 

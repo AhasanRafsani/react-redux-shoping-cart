@@ -33,7 +33,7 @@ const Header = ()=>{
 
 return(
     <>
-      <AppBar className={classes.appBar}>
+      <AppBar position="static" className={classes.appBar}>
           <Toolbar variant="dense" className={classes.toolbar}>
               <Box sx={{flexGrow:1}}>
                   <Typography  variant="h5">Redux Shoping Cart</Typography>

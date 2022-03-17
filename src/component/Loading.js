@@ -1,5 +1,4 @@
 import React from "react";
-import Products from "./Products";
 import {Box,CircularProgress,Typography} from "@mui/material"
 
 const Loading = ()=>{

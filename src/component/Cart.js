@@ -18,7 +18,7 @@ const Cart = ({id,img,title,category,price,qty})=>{
 
     const quantityDecrement = ()=>{
         setProductQty((pre)=>{
-            if (pre <= 1 ){
+            if (pre == 1 ){
                 return pre;
              }
                 return pre-1;
@@ -38,14 +38,14 @@ const Cart = ({id,img,title,category,price,qty})=>{
   
 return(
     <>    
-          <Paper sx={{ margin:"0px 20px 20px 0px", backgroundColor:"rgb(245,255,250)"}}>
-             <Grid container item sx={{ minHeight:"170px"}}>
+          <Paper sx={{margin:"0px 10px 10px 0px"}}>
+             <Grid container justifyContent="center" item sx={{ minHeight:"170px", boxSizing:"border-box"}}>
                
-                   <Grid item xs={4}>
-                      <Avatar variant="square" sx={{height:"130px" ,width:"45%" ,margin:"10px 0 0 40px"}}  alt="product" src={img} />
+                   <Grid item xs={4} md={3} sx={{height:"170px", margin:"10px" }}>
+                      <Avatar variant="square" sx={{height:"100%" ,width:"100%"}}  alt="product" src={img} />
                    </Grid>
                      
-                   <Grid item xs={8}>
+                   <Grid item xs={7} md={7}>
                        <Box sx={{marginTop:"10px"}}>
                           <Typography variant="body1">{title}</Typography>
                           <Typography color="blue" variant="body2">Category : {category}</Typography>

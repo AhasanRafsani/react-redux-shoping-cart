@@ -32,7 +32,7 @@ const cartReducer = (state=cartState , action) =>{
         case PRODUCT_QTY_REQUEST:
                  const pId=action.payload.id;
                  const findProduct = state.cartItems.find((p)=> p.id === pId);
-                 const price = (action.payload.qty * findProduct.price);
+                 const price = Math.round(action.payload.qty * findProduct.price);
                  const adjProduct = {...findProduct, qty:action.payload.qty , totalPrice:price}
                return {
                   cartItems:state.cartItems.map((p)=> p.id === adjProduct.id ? adjProduct : p )
