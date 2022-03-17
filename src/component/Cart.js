@@ -67,7 +67,7 @@ return(
                                <Grid item>
                                   <IconButton onClick={quantityDecrement} variant="outlined"><RemoveIcon/></IconButton>
                                </Grid>
-                                <Grid item sx={{margin:"5px 0px 10px 15px"}}>
+                                <Grid item sx={{margin:"5px 10px 10px 15px"}}>
                                    <Button  color="secondary" size="small" variant="contained" onClick={removeItemHandler} endIcon={<DeleteIcon/>}>Remove To Cart</Button>
                                </Grid>
                            </Grid>
